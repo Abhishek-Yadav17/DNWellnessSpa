@@ -1,0 +1,79 @@
+nav {
+    position: fixed;
+    height: 18vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 2vw 3vw;
+    font-family: Candara;
+    z-index: 4;
+    transition: background-color 0.7s ease;
+    background-color: transparent;
+
+    &.dark {
+        background-color: #7C3719;
+    }
+
+    h4 {
+        font-size: 1.2vw;
+        font-weight: lighter;
+        cursor: pointer;
+        font-family: Carla;
+
+        @media (max-width: 768px) {
+            font-size: 3vw;
+        }
+    }
+
+    img {
+        width: 10vw;
+        cursor: pointer;
+
+        @media (max-width: 768px) {
+            width: 22vw;
+        }
+    }
+
+    button {
+        padding: 1vw 2vw;
+        border: 2px solid #CFB162;
+        border-radius: 10px;
+        background-color: transparent;
+        cursor: pointer;
+        color: #CFB162;
+        font-weight: bold;
+        overflow: hidden;
+        position: relative;
+        transition: color 0.8s ease;
+        font-family: Candara;
+
+        @media (max-width: 768px) {
+            font-size: 2.5vw;
+            padding: 2vw 3vw;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            width: 200%;
+            height: 200%;
+            background-color: #CFB162;
+            border-radius: 50%;
+            transition: transform 0.9s ease;
+            z-index: -1;
+        }
+
+        &:hover::before {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        &:hover {
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@font-face {
+  font-family: Candara;
+  src: url(/Candara.ttf);
+}
+
+@font-face {
+  font-family: Carla;
+  src: url(/Carla.ttf);
+}
+
+@font-face {
+  font-family: Cinema;
+  src: url(/CinemasundaydemofontRegular-MVzop.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,169 @@
+footer {
+    height: 100vh;
+    width: 100%;
+    background-color: #904323;
+    padding: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Candara;
+    color: #D8CABF;
+    gap: 4vw;
+
+    @media (max-width: 768px) {
+        height: fit-content;
+        gap: 15vw;
+    }
+
+    .footer-top {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        @media (max-width: 768px) {
+            gap: 2vw;
+        }
+
+        img {
+            width: 10vw;
+            margin-bottom: 2vw;
+
+            @media (max-width: 768px) {
+                width: 25vw;
+                margin-bottom: 6vw;
+            }
+        }
+
+        h4 {
+            font-size: 1.5vw;
+            font-weight: lighter;
+            width: 30%;
+            line-height: 1.5;
+            text-align: center;
+            margin-bottom: 1.5vw;
+
+            @media (max-width: 768px) {
+                font-size: 4vw;
+                width: 70%;
+            }
+
+            i {
+                font-size: 1.9vw;
+                margin-right: 1vw;
+
+                @media (max-width: 768px) {
+                    font-size: 3.5vw;
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4vw;
+
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 3vw;
+        }
+
+        .elem {
+            height: 100%;
+            width: 20%;
+
+            @media (max-width: 768px) {
+                width: 30%;
+            }
+
+            h2 {
+                font-size: 1.3vw;
+                font-weight: lighter;
+                margin-bottom: 1vw;
+
+                @media (max-width: 768px) {
+                    font-size: 3.5vw;
+                    margin-bottom: 3vw;
+                }
+            }
+
+            h4 {
+                font-weight: lighter;
+                font-size: 1.5vw;
+                margin-bottom: 0.5vw;
+
+                @media (max-width: 768px) {
+                    font-size: 4vw;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #D8CABF;
+                }
+            }
+        }
+
+        .newsletter {
+            height: 100%;
+            padding-left: 4vw;
+            display: flex;
+            flex-direction: column;
+            gap: 2vw;
+            border-left: 2px solid #D8CABF;
+
+            @media (max-width: 768px) {
+                border-left: none;
+                border-top: 1px solid #D8CABF;
+                padding-top: 5vw;
+                margin-top: 5vw;
+                width: 100%;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+            }
+
+            h2 {
+                @media (max-width: 768px) {
+                    font-size: 5vw;
+                }
+            }
+
+            .newsletter-input {
+                display: flex;
+                gap: 0.5vw;
+
+                input {
+                    padding: 1vw 2vw;
+                    border: 2px solid #D8CABF;
+                    border-radius: 50px;
+                    font-size: 1.1vw;
+                    background-color: #E7DED9;
+                    outline: none;
+                    color: #2E241E;
+                    font-family: Candara;
+
+                    @media (max-width: 768px) {
+                        padding: 2vw 3vw;
+                        font-size: 3vw;
+                    }
+                }
+
+                button {
+                    padding: 1.3vw;
+                    border: 2px solid #D8CABF;
+                    border-radius: 50%;
+
+                    @media (max-width: 768px) {
+                        padding: 2.5vw;
+                    }
+                }
+            }
+        }
+    }
+}

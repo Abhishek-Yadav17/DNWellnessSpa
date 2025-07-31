@@ -1,0 +1,225 @@
+main {
+    min-height: 100%;
+    font-family: Candara;
+    width: 100%;
+
+    .contact-hero {
+        height: 100vh;
+        width: 100%;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        color: #fff;
+        position: relative;
+
+        @media (max-width: 768px) {
+            padding: 2vw;
+        }
+
+        &::after {
+            content: '';
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-color: #00000067;
+            z-index: -1;
+        }
+
+        video {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            z-index: -1;
+        }
+
+        h1 {
+            font-family: Carla;
+            font-size: 6vw;
+            margin: 2.5vw 0;
+
+            @media (max-width: 768px) {
+                font-size: 9vw;
+                text-align: center;
+                margin-bottom: 10vw;
+            }
+        }
+
+        h2 {
+            font-size: 1.5vw;
+            font-weight: lighter;
+            text-align: center;
+            width: 40%;
+            line-height: 1.7;
+
+            @media (max-width: 768px) {
+                font-size: 4.5vw;
+                width: 100%;
+            }
+        }
+
+        i {
+            position: absolute;
+            font-size: 2vw;
+            bottom: 0;
+
+            @media (max-width: 768px) {
+                font-size: 8vw;
+            }
+        }
+    }
+
+    .contact-form {
+        height: 150vh;
+        width: 100%;
+        background-color: #EAE3DE;
+        color: #7C3719;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8vw 5vw;
+        gap: 2vw;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 15vw;
+            height: fit-content;
+            padding: 10vw 4vw;
+        }
+
+        .form-left {
+            width: 45%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 6vw;
+
+            @media (max-width: 768px) {
+                width: 100%;
+                height: 50%;
+            }
+
+            h1 {
+                font-size: 3vw;
+
+                @media (max-width: 768px) {
+                    font-size: 8vw;
+                }
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 3vw;
+
+                @media (max-width: 768px) {
+                    gap: 5vw;
+                }
+
+                .row {
+                    display: flex;
+                    gap: 1vw;
+
+                    input {
+                        flex: 1;
+                    }
+                }
+
+                input,
+                textarea {
+                    padding: 1vw 2vw;
+                    border: 2px solid #D5C6BB;
+                    border-radius: 50px;
+                    font-size: 1.1vw;
+                    background-color: #E7DED9;
+                    outline: none;
+                    color: #7C3719;
+                    font-family: Candara;
+
+                    @media (max-width: 768px) {
+                        padding: 3.5vw;
+                        font-size: 3vw;
+                    }
+                }
+
+                textarea {
+                    border-radius: 20px;
+                    resize: none;
+                    height: 45vh;
+
+                    @media (max-width: 768px) {
+                        height: 30vh;
+                    }
+                }
+
+                button {
+                    align-self: flex-start;
+                    padding: 1vw 3vw;
+                    border: none;
+                    border-radius: 1vw;
+                    background-color: #7C3719;
+                    color: #fff;
+                    font-size: 1.1vw;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    font-family: Candara;
+                    margin-top: 1.5vw;
+
+                    @media (max-width: 768px) {
+                        padding: 2vw 6vw;
+                        font-size: 3.5vw;
+                    }
+
+                    &:hover {
+                        background-color: #4c3c32;
+                    }
+                }
+            }
+        }
+
+        .form-right {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 3vw;
+
+            @media (max-width: 768px) {
+                width: 100%;
+                height: 50%;
+            }
+
+            h1 {
+                font-size: 3vw;
+                margin-bottom: 3vw;
+
+                @media (max-width: 768px) {
+                    font-size: 8vw;
+                }
+            }
+
+            h4 {
+                display: flex;
+                font-size: 1.5vw;
+                font-weight: lighter;
+
+                @media (max-width: 768px) {
+                    font-size: 3.5vw;
+                }
+
+                span {
+                    font-weight: bold;
+                    width: 10vw;
+                    flex-shrink: 0;
+
+                    @media (max-width: 768px) {
+                        width: 30vw;
+                    }
+                }
+            }
+        }
+    }
+}

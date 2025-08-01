@@ -1,4 +1,6 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import '../styles/Footer.scss'
 
 const Footer = () => {
@@ -16,13 +18,13 @@ const Footer = () => {
       });
 
       if (res.ok) {
-        alert('Subscribed successfully!');
+        toast.success('Message sent!');
         setEmail('');
       } else {
-        alert('Subscription failed.');
+        toast.error('Failed to send.');
       }
     } catch {
-      alert('Subscription failed.');
+      toast.error('Failed to send.');
     }
   };
 
@@ -56,6 +58,12 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <ToastContainer position="top-center"
+          autoClose={3000}
+          hideProgressBar={false}
+          closeOnClick
+          pauseOnHover
+          draggable />
       </footer>
     </>
   )

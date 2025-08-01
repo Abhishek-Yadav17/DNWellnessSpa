@@ -40,4 +40,13 @@ app.post('/send', async (req, res) => {
   }
 });
 
+app.post('/subscribe', (req, res) => {
+  const { email } = req.body;
+
+  if (!email) return res.status(400).json({ error: 'Email is required' });
+
+  res.status(200).json({ message: 'Subscribed successfully!' });
+});
+
+
 app.listen(5000, () => console.log('Server running on port 5000'));

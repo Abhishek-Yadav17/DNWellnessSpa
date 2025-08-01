@@ -1,7 +1,30 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../styles/Footer.scss'
 
 const Footer = () => {
+
+  const [email, setEmail] = useState('');
+
+  const handleSubscribe = async (e) => {
+    e.preventDefault();
+
+    try {
+      const res = await fetch('https://dnwellnessspa.onrender.com/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+
+      if (res.ok) {
+        alert('Subscribed successfully!');
+        setEmail('');
+      } else {
+        alert('Subscription failed.');
+      }
+    } catch {
+      alert('Subscription failed.');
+    }
+  };
 
   return (
     <>
@@ -28,8 +51,8 @@ const Footer = () => {
           <div className="newsletter">
             <h2>Newsletter</h2>
             <div className="newsletter-input">
-              <input type="email" placeholder="Enter your email" />
-              <button type="submit"><i className="ri-send-plane-2-line"></i></button>
+              <input type="email" placeholder="Enter your email" value={email} onChange={e => setEmail(e.target.value)} />
+              <button type="button" onClick={handleSubscribe}><i className="ri-send-plane-2-line"></i></button>
             </div>
           </div>
         </div>

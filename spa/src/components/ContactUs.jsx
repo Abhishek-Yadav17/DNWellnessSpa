@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { useLocation } from 'react-router-dom';
 import '../styles/ContactUs.scss';
 import Navbar from './Navbar';
@@ -48,14 +50,14 @@ const ContactUs = () => {
   const sendEmail = async (e) => {
     e.preventDefault();
 
-    const res = await fetch('http://localhost:5000/send', {
+    const res = await fetch('https://dnwellnessspa.onrender.com/send', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),
     });
 
-    if (res.ok) alert('Message sent!');
-    else alert('Failed to send.');
+    if (res.ok) toast.success('Message sent!');
+    else toast.error('Failed to send.');
   };
 
   return (
@@ -93,6 +95,12 @@ const ContactUs = () => {
           </div>
         </div>
       </main>
+      <ToastContainer position="top-center"
+        autoClose={3000}
+        hideProgressBar={false}
+        closeOnClick
+        pauseOnHover
+        draggable />
       <Footer />
     </>
   );

@@ -37,6 +37,27 @@ const ContactUs = () => {
     window.scrollTo(0, 0);
   }, [location]);
 
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+
+  const sendEmail = async (e) => {
+    e.preventDefault();
+
+    const res = await fetch('http://localhost:5000/send', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData),
+    });
+
+    if (res.ok) alert('Message sent!');
+    else alert('Failed to send.');
+  };
+
   return (
     <>
       <Navbar bgDark={bgDark} />
@@ -50,25 +71,24 @@ const ContactUs = () => {
         <div className="contact-form">
           <div className="form-left">
             <h1>Contact Form</h1>
-            <form>
+            <form onSubmit={sendEmail}>
               <div className="row">
-                <input type="text" placeholder="First Name" />
-                <input type="text" placeholder="Last Name" />
+                <input type="text" placeholder="First Name" value={formData.firstName} onChange={(e) => setFormData({ ...formData, firstName: e.target.value })} />
+                <input type="text" placeholder="Last Name" value={formData.lastName} onChange={(e) => setFormData({ ...formData, lastName: e.target.value })} />
               </div>
               <div className="row">
-                <input type="email" placeholder="Email" />
-                <input type="tel" placeholder="Phone Number" />
+                <input type="email" placeholder="Email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
+                <input type="tel" placeholder="Phone Number" value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} />
               </div>
-              <textarea placeholder="Your Message"></textarea>
+              <textarea placeholder="Your Message" value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} ></textarea>
               <button type="submit">Send</button>
             </form>
           </div>
           <div className="form-right">
             <h1>Reception</h1>
-            <h4><span>Reservation:</span> Dnwellnessspa@gmail.com</h4>
-            <h4><span>General:</span> Dnwellnessspa@gmail.com</h4>
+            <h4><span>Email:</span> dnwellnessspa@gmail.com</h4>
             <h4><span>Phone:</span> +91 816-9119416</h4>
-            <h4><span>Address:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, architecto?</h4>
+            <h4><span>Address:</span> Global Business Hub, 512, EON Free Zone, Kharadi, Pune, Maharashtra</h4>
             <h4><span>Open:</span> Mon-Sun: 10 a.m. to 9 p.m.</h4>
           </div>
         </div>

@@ -8,9 +8,9 @@ const Footer = () => {
       <footer>
         <div className="footer-top">
           <img src="logo1.png" alt="logo" />
-          <h4><i class="ri-map-pin-line"></i>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
+          <h4><i class="ri-map-pin-line"></i>Global Business Hub, 512, EON Free Zone, Kharadi, Pune, Maharashtra.</h4>
           <h4><i class="ri-phone-line"></i>+91 816-9119416</h4>
-          <h4><i class="ri-mail-send-line"></i>Dnwellnessspa@gmail.com</h4>
+          <h4><i class="ri-mail-send-line"></i>dnwellnessspa@gmail.com</h4>
         </div>
         <div className="footer-bottom">
           <div className="elem">

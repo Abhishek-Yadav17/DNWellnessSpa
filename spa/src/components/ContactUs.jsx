@@ -65,8 +65,8 @@ const ContactUs = () => {
           </div>
           <div className="form-right">
             <h1>Reception</h1>
-            <h4><span>Reservation:</span> booking@spamassage.com</h4>
-            <h4><span>General:</span> info@spamassage.com</h4>
+            <h4><span>Reservation:</span> Dnwellnessspa@gmail.com</h4>
+            <h4><span>General:</span> Dnwellnessspa@gmail.com</h4>
             <h4><span>Phone:</span> +91 816-9119416</h4>
             <h4><span>Address:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, architecto?</h4>
             <h4><span>Open:</span> Mon-Sun: 10 a.m. to 9 p.m.</h4>

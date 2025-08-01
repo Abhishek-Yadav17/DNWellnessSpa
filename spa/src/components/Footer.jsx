@@ -10,7 +10,7 @@ const Footer = () => {
           <img src="logo1.png" alt="logo" />
           <h4><i class="ri-map-pin-line"></i>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
           <h4><i class="ri-phone-line"></i>+91 816-9119416</h4>
-          <h4><i class="ri-mail-send-line"></i>info@spamassage.com</h4>
+          <h4><i class="ri-mail-send-line"></i>Dnwellnessspa@gmail.com</h4>
         </div>
         <div className="footer-bottom">
           <div className="elem">
@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
           <div className="elem">
             <h2>Social Media</h2>
-            <h4><a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer">Instagram</a></h4>
+            <h4><a href="https://www.instagram.com/dnwellnessspa?igsh=MThnM3Z4bzAyY2tucQ==" target="_blank" rel="noopener noreferrer">Instagram</a></h4>
             <h4>Facebook</h4>
             <h4>Twitter</h4>
           </div>

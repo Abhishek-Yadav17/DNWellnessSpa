@@ -90,7 +90,7 @@ const ContactUs = () => {
             <h1>Reception</h1>
             <h4><span>Email:</span> dnwellnessspa@gmail.com</h4>
             <h4><span>Phone:</span> +91 816-9119416</h4>
-            <h4><span>Address:</span> Global Business Hub, 512, EON Free Zone, Kharadi, Pune, Maharashtra</h4>
+            <h4><span>Address:</span> Global Business Hub, 5th floor ,512, EON Free Zone, Kharadi, Pune, Maharashtra</h4>
             <h4><span>Open:</span> Mon-Sun: 10 a.m. to 9 p.m.</h4>
           </div>
         </div>

@@ -110,7 +110,7 @@ footer {
             }
         }
 
-        .newsletter {
+        .booking {
             height: 100%;
             padding-left: 4vw;
             display: flex;
@@ -135,35 +135,29 @@ footer {
                 }
             }
 
-            .newsletter-input {
-                display: flex;
-                gap: 0.5vw;
+            button {
+                padding: 1vw 2vw;
+                border: none;
+                border-radius: 10px;
+                background-color: #CFB162;
+                cursor: pointer;
+                color: #7C3719;
+                font-weight: bold;
+                transition: color 0.8s ease;
+                font-family: Candara;
+                font-size: 1.05vw;
+                transition: all ease 0.7s;
+                margin-top: 1vw;
 
-                input {
-                    padding: 1vw 2vw;
-                    border: 2px solid #D8CABF;
-                    border-radius: 50px;
-                    font-size: 1.1vw;
-                    background-color: #E7DED9;
-                    outline: none;
-                    color: #2E241E;
-                    font-family: Candara;
-
-                    @media (max-width: 768px) {
-                        padding: 2vw 3vw;
-                        font-size: 3vw;
-                    }
+                @media (max-width: 768px) {
+                    padding: 2vw 3vw;
+                    font-size: 3vw;
                 }
 
-                button {
-                    padding: 1.3vw;
-                    border: 2px solid #D8CABF;
-                    border-radius: 50%;
-                    cursor: pointer;
-
-                    @media (max-width: 768px) {
-                        padding: 2.5vw;
-                    }
+                &:hover {
+                    background-color: #e4ca88;
+                    color: #bd6843;
+                    scale: 1.05;
                 }
             }
         }

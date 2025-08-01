@@ -35,7 +35,12 @@ const Homepage = () => {
           <video src="/homepage.mp4" autoPlay loop muted></video>
           <h1>Welcome to <span>DN Wellness Spa</span></h1>
           <h2>Let your stress melt away in a space designed for peace, privacy, and pure relaxation.</h2>
-          <button>Book Your Massage Today</button>
+          <button onClick={() =>
+            window.open(
+              "https://wa.me/918890099108?text=Hello%20DN%20Wellness%20Spa%2C%20I%20would%20like%20to%20book%20a%20massage.",
+              "_blank"
+            )
+          }>Book Your Massage Today</button>
         </div>
         <div className="page1">
           <div className="page1-left">
@@ -57,10 +62,10 @@ const Homepage = () => {
             </div>
             <div className="content-right">
               <h2>What We Offer?</h2>
-              <h4>Professional, certified therapists delivering expert care tailored to your needs.</h4>
-              <h4>Premium essential oils & techniques for a truly therapeutic experience.</h4>
-              <h4>Personalized wellness experiences crafted to align with your body and lifestyle.</h4>
-              <h4>Serene, hygienic, and calming ambiance designed to relax your mind and body.</h4>
+              <h4><i class="ri-check-fill"></i>Professional, certified therapists delivering expert care tailored to your needs.</h4>
+              <h4><i class="ri-check-fill"></i>Premium essential oils & techniques for a truly therapeutic experience.</h4>
+              <h4><i class="ri-check-fill"></i>Personalized wellness experiences crafted to align with your body and lifestyle.</h4>
+              <h4><i class="ri-check-fill"></i>Serene, hygienic, and calming ambiance designed to relax your mind and body.</h4>
               <button onClick={() => navigate('/contact')}>Book Today</button>
             </div>
           </div>
@@ -101,6 +106,14 @@ const Homepage = () => {
             </div>
           </div>
         </div>
+        <a
+          href="https://wa.me/8433002780?text=Hello%20DN%20Wellness%20Spa%2C%20I%20would%20like%20to%20book%20a%20massage."
+          className="whatsapp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="/whatsapp.webp" alt="WhatsApp" />
+        </a>
       </main>
       <Footer />
     </>

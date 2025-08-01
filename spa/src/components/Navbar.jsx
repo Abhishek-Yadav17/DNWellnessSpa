@@ -9,7 +9,7 @@ const Navbar = ({ bgDark }) => {
   return (
     <>
       <nav className={bgDark ? 'dark' : ''}>
-        <h4 onClick={() => navigate('/services')}>Services</h4>
+        <button onClick={() => navigate('/services')}>Services</button>
         <img src={bgDark ? '/logo1.png' : '/logo.png'} alt="logo" onClick={() => navigate('/')}/>
         <button onClick={() => navigate('/contact')}>Contact Us</button>
       </nav>

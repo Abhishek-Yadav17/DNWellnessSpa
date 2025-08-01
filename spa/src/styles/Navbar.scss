@@ -16,17 +16,6 @@ nav {
         background-color: #7C3719;
     }
 
-    h4 {
-        font-size: 1.2vw;
-        font-weight: lighter;
-        cursor: pointer;
-        font-family: Carla;
-
-        @media (max-width: 768px) {
-            font-size: 3vw;
-        }
-    }
-
     img {
         width: 10vw;
         cursor: pointer;

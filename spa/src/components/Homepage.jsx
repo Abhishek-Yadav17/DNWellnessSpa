@@ -37,7 +37,7 @@ const Homepage = () => {
           <h2>Let your stress melt away in a space designed for peace, privacy, and pure relaxation.</h2>
           <button onClick={() =>
             window.open(
-              "https://wa.me/918890099108?text=Hello%20DN%20Wellness%20Spa%2C%20I%20would%20like%20to%20book%20a%20massage.",
+              "https://wa.me/8169119416?text=Hello%20DN%20Wellness%20Spa%2C%20I%20would%20like%20to%20book%20a%20massage.",
               "_blank"
             )
           }>Book Your Massage Today</button>
@@ -107,7 +107,7 @@ const Homepage = () => {
           </div>
         </div>
         <a
-          href="https://wa.me/8433002780?text=Hello%20DN%20Wellness%20Spa%2C%20I%20would%20like%20to%20book%20a%20massage."
+          href="https://wa.me/8169119416?text=Hello%20DN%20Wellness%20Spa%2C%20I%20would%20like%20to%20book%20a%20massage."
           className="whatsapp"
           target="_blank"
           rel="noopener noreferrer"

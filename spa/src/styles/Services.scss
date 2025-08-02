@@ -331,4 +331,177 @@ main {
             }
         }
     }
+
+    .memberships {
+        height: 140vh;
+        width: 100%;
+        background-color: #EAE3DE;
+        color: #7C3719;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1vw;
+
+        @media (max-width: 768px) {
+            height: fit-content;
+            padding: 4vw;
+        }
+
+        h1 {
+            font-size: 4.5vw;
+            text-align: center;
+            font-family: Cinema;
+            font-weight: lighter;
+            line-height: 1.2;
+
+            @media (max-width: 768px) {
+                font-size: 8vw;
+                width: 100%;
+            }
+        }
+
+        h4 {
+            font-size: 1.5vw;
+            font-weight: lighter;
+            color: #904323;
+            width: 60%;
+            text-align: center;
+            margin-bottom: 6vw;
+
+            @media (max-width: 768px) {
+                font-size: 3.5vw;
+                text-align: center;
+                width: 100%;
+            }
+        }
+
+        .membership-cards {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 4vw;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+                align-items: center;
+                gap: 10vw;
+            }
+
+            .membership-card {
+                background-color: transparent;
+                border: 2px solid #7C3719;
+                border-radius: 20px;
+                padding: 1.5vw;
+                text-align: center;
+                color: #7C3719;
+                width: 21.5vw;
+                height: 68vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                box-shadow: 0 4px 20px rgba(165, 87, 39, 0.392);
+                transition: transform 0.3s ease;
+
+                @media (max-width: 768px) {
+                    width: 80%;
+                    height: 62vh;
+                    padding: 4vw;
+                    gap: 4vw;
+                }
+
+                h2 {
+                    margin-bottom: 1vw;
+                    font-size: 2vw;
+                    margin-bottom: 2vw;
+
+                    @media (max-width: 768px) {
+                        font-size: 6vw;
+                    }
+                }
+
+                img {
+                    width: 8vw;
+                    margin-bottom: 2vw;
+
+                    @media (max-width: 768px) {
+                        width: 30vw;
+                    }
+                }
+
+                h4 {
+                    font-size: 1.5vw;
+                    font-weight: bold;
+                    margin-bottom: 1.2vw;
+
+                    @media (max-width: 768px) {
+                        font-size: 5vw;
+                    }
+                }
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+
+                    li {
+                        margin: 0.5vw 0;
+                        font-size: 1.3vw;
+                        display: flex;
+                        align-items: center;
+                        gap: 0.5vw;
+
+                        @media (max-width: 768px) {
+                            font-size: 4.5vw;
+                        }
+
+                        span {
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                button {
+                    padding: 0.8vw 2vw;
+                    border: none;
+                    border-radius: 10px;
+                    background-color: #7C3719;
+                    cursor: pointer;
+                    color: #F7E0AC;
+                    font-weight: bold;
+                    font-family: Candara;
+                    font-size: 1vw;
+                    margin-top: 1.5vw;
+                    transition: all ease 0.7s;
+
+                    @media (max-width: 768px) {
+                        padding: 3vw 4vw;
+                        font-size: 3vw;
+                        width: 100%;
+                    }
+
+                    &:hover {
+                        background-color: #CFB162;
+                        color: #7C3719;
+                    }
+                }
+            }
+
+            .middle {
+                transform: scale(1.1);
+
+                @media (max-width: 768px) {
+                    transform: scale(1);
+                }
+
+                img {
+                    width: 9vw;
+
+                    @media (max-width: 768px) {
+                        width: 45vw;
+                    }
+                }
+            }
+        }
+    }
+
 }

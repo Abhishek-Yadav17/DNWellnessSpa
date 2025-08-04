@@ -18,9 +18,9 @@ const Footer = () => {
         <div className="footer-bottom">
           <div className="elem">
             <h2>Pages</h2>
-            <h4>Homepage</h4>
-            <h4>Services</h4>
-            <h4>Contact Us</h4>
+            <h4 onClick={() => navigate('/')}>Homepage</h4>
+            <h4 onClick={() => navigate('/services')}>Services</h4>
+            <h4 onClick={() => navigate('/contact')}>Contact Us</h4>
           </div>
           <div className="elem">
             <h2>Follow us on our socials!</h2>
